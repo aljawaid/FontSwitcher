@@ -1,18 +1,19 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps\Controller;
+namespace Kanboard\Plugin\FontSwitcher\Controller;
 
 use Kanboard\Controller\BaseController;
 use Kanboard\Core\Plugin\Directory;
 
 /**
- * Plugin PluginNameExampleStudlyCaps
- * Class myController
+ * Plugin FontSwitcher
  *
- * @author
+ * Class FontSwitcherController
+ * @package  Kanboard\Controller
+ * @author   aljawaid
  */
 
-class MyController extends \Kanboard\Controller\PluginController
+class FontSwitcherController extends \Kanboard\Controller\PluginController
 {
     /**
      * Display the Settings Page
@@ -27,8 +28,8 @@ class MyController extends \Kanboard\Controller\PluginController
 
     public function show()
     {
-        $this->response->html($this->helper->layout->config('pluginNameExampleCamelCase:folder/filename', array(
-            'title' => t('PluginNameExampleStudlyCaps') . ' &#10562; ' . t('Settings'),
+        $this->response->html($this->helper->layout->config('fontSwitcher:folder/filename', array(
+            'title' => e('Settings %s FontSwitcher', ' &#10562; ')
         )));
     }
 }

@@ -1,11 +1,9 @@
 <?php
 
-namespace Kanboard\Plugin\PluginNameExampleStudlyCaps;
+namespace Kanboard\Plugin\FontSwitcher;
 
 use Kanboard\Core\Plugin\Base;
 use Kanboard\Core\Translator;
-// use Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\AgeHelper;  // Helper Class and Filename should be exact
-// use Kanboard\Helper;  // Add core Helper for using forms etc. inside external templates
 
 class Plugin extends Base
 {
@@ -17,15 +15,11 @@ class Plugin extends Base
 
         // CSS - Asset Hook
         //  - Keep filename lowercase
-        $this->hook->on('template:layout:css', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/css/plugin-name.css'));
-
-        // JS - Asset Hook
-        //  - Keep filename lowercase
-        $this->hook->on('template:layout:js', array('template' => 'plugins/PluginNameExampleStudlyCaps/Assets/js/plugin-name.js'));
+        $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/css/plugin-name.css'));
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
-        $this->template->hook->attach('template:project-header:view-switcher-before-project-overview', 'pluginNameExampleCamelCase:project_header/actions');
+        $this->template->hook->attach('template:layout:head', 'fontSwitcher:project_header/actions');
 
         // Views - Add Menu Item - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
@@ -50,7 +44,7 @@ class Plugin extends Base
     public function getPluginName()
     {
         // Plugin Name MUST be identical to namespace for Plugin Directory to detect updated versions - do not translate the plugin name here
-        return 'PluginNameExampleStudlyCaps';
+        return 'FontSwitcher';
     }
 
     public function getPluginDescription()
@@ -60,7 +54,7 @@ class Plugin extends Base
 
     public function getPluginAuthor()
     {
-        return '';
+        return 'aljawaid';
     }
 
     public function getPluginVersion()
@@ -71,11 +65,11 @@ class Plugin extends Base
     public function getCompatibleVersion()
     {
         // Examples: '>=1.0.37' '<1.0.37' '<=1.0.37'
-        return '>=1.2.32';
+        return '>=1.2.20';
     }
 
     public function getPluginHomepage()
     {
-        return 'https://github.com/url';
+        return 'https://github.com/aljawaid/FontSwitcher';
     }
 }
