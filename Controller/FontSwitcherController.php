@@ -29,7 +29,7 @@ class FontSwitcherController extends \Kanboard\Controller\PluginController
     public function showFonts()
     {
         $this->response->html($this->helper->layout->config('fontSwitcher:config/fonts', array(
-            'title' => e('Settings %s FontSwitcher', ' &#10562; ')
+            'title' => e('Settings %s Font Switcher', ' &#10562; ')
         )));
     }
 }
