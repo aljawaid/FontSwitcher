@@ -12,7 +12,6 @@ use Kanboard\Core\Plugin\Directory;
  * @package  Kanboard\Controller
  * @author   aljawaid
  */
-
 class FontSwitcherController extends \Kanboard\Controller\PluginController
 {
     /**
@@ -25,11 +24,32 @@ class FontSwitcherController extends \Kanboard\Controller\PluginController
      *
      * @access public
      */
-
     public function showFonts()
     {
         $this->response->html($this->helper->layout->config('fontSwitcher:config/fonts', array(
             'title' => e('Settings %s Font Switcher', ' &#10562; ')
         )));
+    }
+
+    /**
+     * Save Settings
+     *
+     * @see     ConfigController.php   save()
+     * @author  Frederic Guillot
+     * @author  aljawaid
+     */
+    public function save()
+    {
+        $values =  $this->request->getValues();
+        $redirect = $this->request->getStringParam('redirect', 'showFonts');
+
+        if ($this->configModel->save($values)) {
+            $this->languageModel->loadCurrentLanguage();
+            $this->flash->success(t('Font settings saved successfully.'));
+        } else {
+            $this->flash->failure(t('Unable to save font settings.'));
+        }
+
+        $this->response->redirect($this->helper->url->to('FontSwitcherController', $redirect, ['plugin' => 'FontSwitcher']));
     }
 }
