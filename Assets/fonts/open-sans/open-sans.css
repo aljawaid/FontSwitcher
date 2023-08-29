@@ -1,0 +1,82 @@
+/*
+Open Sans
+sans-serif
+12 styles 300, 300italic, regular, italic, 500, 500italic, 600, 600italic, 700, 700italic, 800, 800italic
+8 charsets cyrillic, cyrillic-ext, greek, greek-ext, hebrew, latin, latin-ext, vietnamese
+*/
+
+/* open-sans-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-italic - latin_latin-ext */
+@font-face {
+      font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+      font-family: 'Open Sans';
+      font-style: italic;
+      font-weight: 400;
+      src: url('../open-sans/open-sans-v35-latin_latin-ext-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500 - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500italic - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-600 - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-600italic - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700italic - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../open-sans/open-sans-v35-latin_latin-ext-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
