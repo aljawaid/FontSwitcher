@@ -58,12 +58,7 @@ Brief intro
 
 ## Usage
 
-```html
-<!--
-REMOVE BLOCK
-Go to `Settings` &#10562;
--->
-```
+Go to `Settings` &#10562; Application Settings
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8592; Previous</a>] [<a href="#authors--contributors">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -83,7 +78,7 @@ Go to `Settings` &#10562;
 - **Other Plugins & Action Plugins**
   - _No known issues_
 - **Core Files & Templates**
-  - `01` Template override
+  - _No template overrides_
   - _No database changes_
 
 </details>
