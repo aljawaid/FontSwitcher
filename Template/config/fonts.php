@@ -1,5 +1,5 @@
 <div id="FontsPage" class="fonts-page-header">
     <h2 class="">
-        <span class="-icon"></span> <?= t('Application Fonts') ?>
+        <span class="font-switcher-icon"></span><span class="v-middle"><?= t('Application Fonts') ?></span>
     </h2>
 </div>

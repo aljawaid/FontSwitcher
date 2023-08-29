@@ -70,3 +70,12 @@ a.font-page-link {
 a.font-page-link:hover, a.font-page-link:focus {
     color: var(--pp-purple);
 }
+
+#FontsPage h2 {
+    margin-block: 5px 15px;
+}
+
+#FontsPage h2 span.font-switcher-icon {
+    vertical-align: middle;
+    margin-right: 5px;
+}
