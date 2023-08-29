@@ -129,6 +129,15 @@ a.font-page-link:hover, a.font-page-link:focus {
     padding-inline: 5px;
 }
 
+.font-form fieldset span.font-version {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    background: var(--pp-white);
+    padding-inline: 5px;
+    color: var(--pp-grey);
+}
+
 .font-form fieldset span.font-typeface {
     position: absolute;
     right: 10px;
