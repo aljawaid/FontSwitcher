@@ -65,6 +65,37 @@
             </div>
         </fieldset>
 
+        <!-- Open Sans Font -->
+        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'open-sans') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+            <legend class="">Open Sans</legend>
+            <span class="woff-icon"></span>
+            <span class="font-version" title="<?= t('Font Version Included') ?>">v35</span>
+            <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
+            <div class="font-option-wrapper">
+                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'open-sans', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'open-sans') ?>
+            </div>
+            <div class="font-description-wrapper">
+                <ul class="font-description">
+                    <li class="font-description-name"><?= e('Font Names with Fallbacks %s', '<i>' . t('(in order)') . '</i>') ?></li>
+                    <li class="font-name-value">"Open Sans", Helvetica, Arial, sans-serif</li>
+                </ul>
+                <ul class="font-description-styles">
+                    <li class="font-description-styles-title"><?= t('Styles') ?></li>
+                    <li class="font-style-value">Regular (400 normal)</li>
+                    <li class="font-style-value">Italic</li>
+                    <li class="font-style-value">Bolder (600)</li>
+                    <li class="font-style-value">Bolder Italic (600 italic)</li>
+                    <li class="font-style-value">Bold (700)</li>
+                    <li class="font-style-value">Bold Italic (700 italic)</li>
+                </ul>
+                <ul class="font-description-charsets">
+                    <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
+                    <li class="font-charset-value" title="latin">Latin</li>
+                    <li class="font-charset-value" title="latin-ext">Latin Extended</li>
+                </ul>
+            </div>
+        </fieldset>
+
         <div class="form-actions">
             <button type="submit" class="btn btn-blue"><?= t('Save Font Settings') ?></button>
             <a href="<?= $this->url->href('ConfigController', 'application', array(), false, 'FontSettingsSection') ?>" class="btn">
