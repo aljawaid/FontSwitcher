@@ -36,7 +36,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('description text');
+        return t('Choose a new font style for your application from a variety of open source fonts replacing the default font \'Helvetica Neue\' (Mac), \'Helvetica\' (Mac), \'Arial\' (Windows) to a different typeface.');
     }
 
     public function getPluginAuthor()
