@@ -8,12 +8,14 @@
     --pp-red-alt-2: #AE003D;
     --pp-black: #000000;
     --pp-light-grey: #8F8F8F;
+    --pp-grey-alt: #737373;
     --pp-grey: #4D4D4D;
     --pp-white: #FFFFFF;
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
     --pp-purple: #7532F9;
+    --pp-purple-dark: #3800A6;
     --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
@@ -94,8 +96,114 @@ a.font-page-link:hover, a.font-page-link:focus {
     border-radius: var(--border-radius-font-switcher);
 }
 
+.font-form fieldset.font-wrapper legend, .font-form fieldset.font-wrapper-enabled legend {
+    background-color: var(--pp-white);
+    padding-inline: 5px;
+}
+
+.font-form fieldset.font-wrapper-enabled {
+    border: 2px inset var(--pp-green);
+}
+
+.font-form fieldset {
+    position: relative;
+    box-shadow: 0 0px 2px 0px;
+}
+
+.font-form fieldset.font-wrapper {
+    border: 2px inset var(--pp-purple);
+    border-radius: var(--border-radius-font-switcher);
+}
+
+.font-form fieldset.font-wrapper legend {
+    color: var(--pp-purple-dark);
+}
+
+.font-form fieldset span[class*="-icon"] {
+    position: absolute;
+    right: 14px;
+    top: -28px;
+    width: 30px;
+    height: 30px;
+    background: var(--pp-white);
+    padding-inline: 5px;
+}
+
+.font-form fieldset span.font-typeface {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    color: var(--pp-grey);
+}
+
+.font-option-wrapper {
+    width: 200px;
+    font-size: .9em;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.font-option-wrapper label {
+    font-size: 1.1em;
+    margin-top: 0;
+}
+
+.font-option-wrapper label input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: bottom;
+}
+
+.font-description-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.font-description-name, .font-description-styles-title, .font-description-charsets-title {
+    font-size: .8em;
+    font-weight: 600;
+    color: var(--pp-purple-dark);
+    opacity: .7;
+    margin-right: 15px;
+}
+
+.font-description-name i {
+    font-weight: normal;
+}
+
+ul.font-description li, ul.font-description-styles li, ul.font-description-charsets li {
+    list-style-type: none;
+    margin-left: 0;
+    line-height: initial;
+    display: inline-block;
+}
+
+ul.font-description, ul.font-description-styles, ul.font-description-charsets {
+    margin-block: 2px 5px;
+}
+
+li.font-style-value {
+    background-color: var(--pp-light-grey);
+    color: var(--pp-white);
+}
+
+.font-style-value, .font-charset-value {
+    font-size: .9em;
+    margin-right: 5px;
+    color: var(--pp-grey-alt);
+    border: 1px solid var(--pp-grey-alt);
+    padding: 1px 3px;
+    border-radius: var(--border-radius-font-switcher);
+}
 
 /* Radio element, when checked */
 .font-option-wrapper input[type="radio"]:checked {
     box-shadow: 0 0 0 2px var(--pp-purple);
+}
+
+.font-name-value {
+    padding: 2px 7px 2px 5px;
+    border-radius: var(--border-radius-font-switcher);
+    color: var(--pp-purple-dark);
 }
