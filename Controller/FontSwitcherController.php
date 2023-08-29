@@ -26,9 +26,9 @@ class FontSwitcherController extends \Kanboard\Controller\PluginController
      * @access public
      */
 
-    public function show()
+    public function showFonts()
     {
-        $this->response->html($this->helper->layout->config('fontSwitcher:folder/filename', array(
+        $this->response->html($this->helper->layout->config('fontSwitcher:config/fonts', array(
             'title' => e('Settings %s FontSwitcher', ' &#10562; ')
         )));
     }
