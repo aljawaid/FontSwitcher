@@ -79,3 +79,23 @@ a.font-page-link:hover, a.font-page-link:focus {
     vertical-align: middle;
     margin-right: 5px;
 }
+
+.fonts-page-intro {
+    margin-block: 25px;
+}
+
+.font-form h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.font-form.panel {
+    border: 1px inset var(--pp-grey);
+    border-radius: var(--border-radius-font-switcher);
+}
+
+
+/* Radio element, when checked */
+.font-option-wrapper input[type="radio"]:checked {
+    box-shadow: 0 0 0 2px var(--pp-purple);
+}
