@@ -13,6 +13,7 @@
     --pp-green: #2EA02E;
     --pp-green-dark: #055D20;
     --pp-orange: #FF6500;
+    --pp-purple: #7532F9;
     --blue-icon-dark: #034CA6;
     --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
     --blue-border-gradient-match: #476E9E;
@@ -46,3 +47,26 @@
 .text-center { text-align: center; }
 
 .relative { position: relative; }
+
+.v-middle { vertical-align: middle; }
+
+#FontSettingsSection h3 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+#FontSettingsSection span.font-switcher-icon {
+    vertical-align: middle;
+    margin-right: 4px;
+    height: 32px;
+}
+
+a.font-page-link {
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-font-switcher);
+}
+
+a.font-page-link:hover, a.font-page-link:focus {
+    color: var(--pp-purple);
+}
