@@ -38,7 +38,7 @@
 
         <!-- Lato Font -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'lato') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
-            <legend class=""><?= t('Lato') ?></legend>
+            <legend class="">Lato</legend>
             <span class="woff-icon"></span>
             <span class="font-version" title="<?= t('Font Version Included') ?>">v24</span>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
