@@ -111,7 +111,7 @@ a.font-page-link:hover, a.font-page-link:focus {
 
 .font-form fieldset {
     position: relative;
-    box-shadow: 0 0px 2px 0px;
+    box-shadow: 0 0 2px 0;
 }
 
 .font-form fieldset.font-wrapper {
@@ -224,7 +224,7 @@ li.font-style-value {
 .font-name-value {
     padding: 2px 7px 2px 5px;
     border-radius: var(--border-radius-font-switcher);
-    color: var(--pp-purple-dark);
+    color: var(--pp-black);
 }
 
 #FontForm .form-actions button.save-font-settings {

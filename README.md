@@ -54,7 +54,7 @@ Improve readability and reduce eye strain by choosing from different styles of s
 
 **Application Fonts**  
 
-![Application Fonts](../master/Screenshots/screenshot-font-switcher.png)
+![Application Fonts](../master/screenshot-font-switcher.png)
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
