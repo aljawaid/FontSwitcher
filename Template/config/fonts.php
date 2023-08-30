@@ -197,7 +197,9 @@
         </fieldset>
 
         <div class="form-actions">
-            <button type="submit" class="btn btn-blue"><?= t('Save Font Settings') ?></button>
+            <button type="submit" class="btn save-font-settings">
+                <i class="fa fa-save"></i> <?= t('Save Font Settings') ?>
+            </button>
             <a href="<?= $this->url->href('ConfigController', 'application', array(), false, 'FontSettingsSection') ?>" class="btn">
                 <?= t('Back to Settings') ?>
             </a>

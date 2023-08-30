@@ -63,6 +63,10 @@
     height: 32px;
 }
 
+#FontForm .form-actions button, #FontForm .form-actions a.btn {
+    transition: var(--transition-font-switcher);
+}
+
 a.font-page-link {
     text-decoration: none;
     font-weight: 600;
@@ -221,4 +225,27 @@ li.font-style-value {
     padding: 2px 7px 2px 5px;
     border-radius: var(--border-radius-font-switcher);
     color: var(--pp-purple-dark);
+}
+
+#FontForm .form-actions button.save-font-settings {
+    background-color: #9B69FF;
+    color: white;
+    font-size: 1.1em;
+    border: 1px solid var(--pp-purple-dark);
+    border-radius: var(--border-radius-font-switcher);
+}
+
+#FontForm .form-actions button.save-font-settings:hover, #FontForm .form-actions button.save-font-settings:focus {
+    background-color: var(--pp-purple);
+}
+
+#FontForm .form-actions a.btn {
+    font-size: 1.1em;
+    border: 2px solid var(--pp-purple);
+    border-radius: var(--border-radius-font-switcher);
+}
+
+#FontForm .form-actions a.btn:hover, #FontForm .form-actions a.btn:focus {
+    color: var(--pp-purple);
+    background-color: var(--pp-white);
 }
