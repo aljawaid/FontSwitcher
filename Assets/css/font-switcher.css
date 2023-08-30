@@ -140,7 +140,6 @@ a.font-page-link:hover, a.font-page-link:focus {
     background: var(--pp-white);
     padding-inline: 5px;
     color: var(--pp-grey);
-    margin: -4px;
     text-align: center;
     line-height: 1;
 }
