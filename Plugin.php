@@ -13,6 +13,17 @@ class Plugin extends Base
         //  - Keep filename lowercase
         $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/css/font-switcher.css'));
         $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/css/font-switcher-icons.css'));
+        if ($this->configModel->get('font_switcher_font_name') == 'lato') {
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/lato/lato.css'));
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'open-sans') {
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/open-sans/open-sans.css'));
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'roboto-slab') {
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/roboto-slab/roboto-slab.css'));
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'source-sans-3') {
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/source-sans-3/source-sans-3.css'));
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'ubuntu-mono') {
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/ubuntu-mono/ubuntu-mono.css'));
+        }
 
         // Views - Template Hook
         //  - Override name should start lowercase e.g. pluginNameExampleCamelCase
