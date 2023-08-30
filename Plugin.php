@@ -37,7 +37,7 @@ class Plugin extends Base
 
     public function getPluginDescription()
     {
-        return t('Choose a new font style from a variety of open source fonts replacing the default font \'Helvetica Neue\' (Mac), \'Helvetica\' (Mac), \'Arial\' (Windows) to a different typeface giving your application a fresh look.');
+        return t('Choose a new font style from a variety of open source fonts replacing the default \'Helvetica Neue\' (Mac) and \'Arial\' (Windows) fonts to a different typeface giving your application a fresh new look. Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.');
     }
 
     public function getPluginAuthor()
