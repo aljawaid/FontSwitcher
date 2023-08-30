@@ -1,0 +1,30 @@
+/* roboto-slab-regular - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: normal;
+    src: url('../roboto-slab/roboto-slab-v25-latin_latin-ext-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-600 - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: 600;
+    src: url('../roboto-slab/roboto-slab-v25-latin_latin-ext-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* roboto-slab-700 - latin_latin-ext */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: "Roboto Slab";
+    font-style: normal;
+    font-weight: bold;
+    src: url('../roboto-slab/roboto-slab-v25-latin_latin-ext-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+body {
+    font-family: "Roboto Slab", Helvetica, Arial, serif, sans-serif;
+}
