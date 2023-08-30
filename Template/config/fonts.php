@@ -102,6 +102,36 @@
             </div>
         </fieldset>
 
+        <!-- Roboto Slab Font -->
+        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'roboto-slab') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+            <legend class="">Roboto Slab</legend>
+            <div class="icon-version">
+                <span class="woff-icon"></span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">v25</span>
+            </div>
+            <span class="font-typeface" title="<?= t('Font Typeface') ?>">serif</span>
+            <div class="font-option-wrapper">
+                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'roboto-slab', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'roboto-slab') ?>
+            </div>
+            <div class="font-description-wrapper">
+                <ul class="font-description">
+                    <li class="font-description-name"><?= e('Font Names with Fallbacks %s', '<i>' . t('(in order)') . '</i>') ?></li>
+                    <li class="font-name-value">"Roboto Slab", Helvetica, Arial, serif, sans-serif</li>
+                </ul>
+                <ul class="font-description-styles">
+                    <li class="font-description-styles-title"><?= t('Styles') ?></li>
+                    <li class="font-style-value">Regular (400 normal)</li>
+                    <li class="font-style-value">Bolder (600)</li>
+                    <li class="font-style-value">Bold (700)</li>
+                </ul>
+                <ul class="font-description-charsets">
+                    <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
+                    <li class="font-charset-value" title="latin">Latin</li>
+                    <li class="font-charset-value" title="latin-ext">Latin Extended</li>
+                </ul>
+            </div>
+        </fieldset>
+
         <!-- Source Sans 3 -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'source-sans-3') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Source Sans 3</legend>
