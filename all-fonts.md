@@ -20,7 +20,7 @@
 
 **Roboto Slab**  
 
-![Roboto Slab](../master/Screenshots/screenshot-robot-slab.png)
+![Roboto Slab](../master/Screenshots/screenshot-roboto-slab.png)
 
 ---
 
