@@ -13,27 +13,36 @@ return array(
     //
     // GENERAL
     //
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'Choose a new font style from a variety of open source fonts replacing the default \'Helvetica Neue\' (Mac) and \'Arial\' (Windows) fonts to a different typeface giving your application a fresh new look. Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.Controller/FontSwitcherController.php' => '',
     //
-    // CORE OVERRIDES OR 3RD PARTY PLUGIN TRANSLATIONS AFFECTING THIS PLUGIN
+    // Controller/FontSwitcherController.php
     //
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
-    '' => '',
+    'Settings %s Font Switcher' => '',
+    'Font settings saved successfully.' => '',
+    'Unable to save font settings.' => '',
+    //
+    // Template/config/font-settings.php
+    //
+    'Font Switcher' => '',
+    'The site font can be changed in the %s page.' => '',
+    'Font Settings' => '',
+    'Visit page' => '',
+    //
+    // Template/config/fonts.php
+    //
+    'Application Fonts' => '',
+    'By default, the application uses specific fonts with fallbacks depending on the operating system. Switch to one of the fonts below to change the text style across the application. All fonts listed here are open source webfonts. These fonts are included with this plugin but only used if selected. Select from one of the fonts below to override the default fonts.' => '',
+    'Font Options' => '',
+    'font_switcher_font_name' => '',
+    'Default Fonts' => '',
+    'Font Typeface' => '',
+    'Use default fonts' => '',
+    '(in order)' => '',
+    'Styles' => '',
+    'Character Sets' => '',
+    'Font Version Included' => '',
+    'Use this font' => '',
+    'Font Names with Fallbacks %s' => '',
+    'Save Font Settings' => '',
+    'Back to Settings' => '',
 );
