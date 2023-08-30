@@ -82,6 +82,7 @@ Go to `Settings` &#10562; Application Settings
 - Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
 - **Other Plugins & Action Plugins**
   - _No known issues_
+  - - Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [EssentialTheme](https://codeberg.org/abu/EssentialTheme),
 - **Core Files & Templates**
   - _No template overrides_
   - _No database changes_
