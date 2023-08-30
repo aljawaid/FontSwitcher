@@ -1,3 +1,10 @@
+/*
+Roboto Slab
+serif
+9 styles 100, 200, 300, regular, 500, 600, 700, 800, 900
+7 charsets cyrillic, cyrillic-ext, greek, greek-ext, latin, latin-ext, vietnamese
+*/
+
 /* roboto-slab-regular - latin_latin-ext */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

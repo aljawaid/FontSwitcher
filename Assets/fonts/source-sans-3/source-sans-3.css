@@ -1,3 +1,10 @@
+/*
+Source Sans 3
+sans-serif
+16 styles 200, 200italic, 300, 300italic, regular, italic, 500, 500italic, 600, 600italic, 700, 700italic, 800, 800italic, 900, 900italic
+7 charsets cyrillic, cyrillic-ext, greek, greek-ext, latin, latin-ext, vietnamese
+*/
+
 /* source-sans-3-regular - latin_latin-ext */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
