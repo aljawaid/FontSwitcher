@@ -31,19 +31,18 @@
     </a>
 </p>
 
+Choose a new font style from a variety of self-hosted fonts replacing the default 'Helvetica Neue' (Mac), and 'Arial' (Windows) fonts to a different typeface giving your application a fresh new look. Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.
 
-```html
-<!--
-REMOVE BLOCK
-Brief intro
--->
-```
+
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
 ## Features
 
-- `main features list`
-- `main features list`
+- A collection of open source fonts by Google
+  - Collection includes Serif, Sans-Serif and Monospace typefaces
+- Webfont (`WOFF2`) versions are used for faster rendering
+  - Webfonts are not installed locally on the user's machine but included with the package so no third party connections are required
+- Fonts are only loaded if selected to be used
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -93,7 +92,7 @@ Go to `Settings` &#10562; Application Settings
 
 ## Authors & Contributors
 
-- [@](https://github.com/url) - Author
+- [@aljawaid](https://github.com/aljawaid) - Author
 - _Contributors welcome_
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#installation--compatibility">&#8592; Previous</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
