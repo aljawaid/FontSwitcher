@@ -47,7 +47,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'lato', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'lato') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'lato', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'lato') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -78,7 +78,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'open-sans', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'open-sans') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'open-sans', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'open-sans') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -111,7 +111,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'roboto-slab', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'roboto-slab') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'roboto-slab', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'roboto-slab') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -141,7 +141,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'source-sans-3', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'source-sans-3') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'source-sans-3', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'source-sans-3') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
