@@ -104,6 +104,8 @@ Go to `Settings` &#10562; Application Settings
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
+- Fonts are copyright of their respective authors
+  - See [Google Fonts Open Source Font Attribution](https://fonts.google.com/attribution) to find out the specific license for fonts in this package
 
 ---
 
