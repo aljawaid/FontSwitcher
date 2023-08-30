@@ -231,8 +231,9 @@ li.font-style-value {
     background-color: #9B69FF;
     color: white;
     font-size: 1.1em;
-    border: 1px solid var(--pp-purple-dark);
+    border: 2px solid var(--pp-purple-dark);
     border-radius: var(--border-radius-font-switcher);
+    vertical-align: middle;
 }
 
 #FontForm .form-actions button.save-font-settings:hover, #FontForm .form-actions button.save-font-settings:focus {
@@ -243,6 +244,7 @@ li.font-style-value {
     font-size: 1.1em;
     border: 2px solid var(--pp-purple);
     border-radius: var(--border-radius-font-switcher);
+    vertical-align: middle;
 }
 
 #FontForm .form-actions a.btn:hover, #FontForm .form-actions a.btn:focus {
