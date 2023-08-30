@@ -119,10 +119,16 @@ a.font-page-link:hover, a.font-page-link:focus {
     color: var(--pp-purple-dark);
 }
 
-.font-form fieldset span[class*="-icon"] {
+.icon-version {
     position: absolute;
-    right: 14px;
-    top: -28px;
+    right: 10px;
+    top: -25px;
+    background: var(--pp-white);
+    padding-inline: 5px;
+    color: var(--pp-grey);
+}
+
+.font-form fieldset span[class*="-icon"] {
     width: 30px;
     height: 30px;
     background: var(--pp-white);
@@ -130,12 +136,12 @@ a.font-page-link:hover, a.font-page-link:focus {
 }
 
 .font-form fieldset span.font-version {
-    position: absolute;
-    right: 14px;
-    top: 5px;
+    display: block;
     background: var(--pp-white);
     padding-inline: 5px;
     color: var(--pp-grey);
+    margin-top: 2px;
+    text-align: center;
 }
 
 .font-form fieldset span.font-typeface {

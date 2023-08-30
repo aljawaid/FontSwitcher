@@ -12,7 +12,9 @@
         <!-- Default Fonts -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'default_fonts') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class=""><?= t('Default Fonts') ?></legend>
-            <span class="default-files-icon"></span>
+            <div class="icon-version">
+                <span class="default-files-icon"></span>
+            </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
                 <?= $this->form->radio('font_switcher_font_name', t('Use default fonts'), 'default_fonts', true, isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'default_fonts') ?>
@@ -39,8 +41,10 @@
         <!-- Lato Font -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'lato') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Lato</legend>
-            <span class="woff-icon"></span>
-            <span class="font-version" title="<?= t('Font Version Included') ?>">v24</span>
+            <div class="icon-version">
+                <span class="woff-icon"></span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">v24</span>
+            </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
                 <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'lato', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'lato') ?>
@@ -68,8 +72,10 @@
         <!-- Open Sans Font -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'open-sans') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Open Sans</legend>
-            <span class="woff-icon"></span>
-            <span class="font-version" title="<?= t('Font Version Included') ?>">v35</span>
+            <div class="icon-version">
+                <span class="woff-icon"></span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">v35</span>
+            </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
                 <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'open-sans', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'open-sans') ?>
@@ -99,8 +105,10 @@
         <!-- Source Sans 3 -->
         <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'source-sans-3') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Source Sans 3</legend>
-            <span class="woff-icon"></span>
-            <span class="font-version" title="<?= t('Font Version Included') ?>">v9</span>
+            <div class="icon-version">
+                <span class="woff-icon"></span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">v9</span>
+            </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
                 <?= $this->form->radio('font_switcher_font_name', t('Use font'), 'source-sans-3', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'source-sans-3') ?>
