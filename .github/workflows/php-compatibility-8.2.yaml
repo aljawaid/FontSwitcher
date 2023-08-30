@@ -32,4 +32,4 @@ jobs:
         uses: pantheon-systems/phpcompatibility-action@v1
         with:
           test-versions: '8.2-'
-          paths: ${{ github.workspace }}/Plugin.php ${{ github.workspace }}/Controller/ ${{ github.workspace }}/Locale/ ${{ github.workspace }}/Helper/ ${{ github.workspace }}/Template/
+          paths: ${{ github.workspace }}/Plugin.php ${{ github.workspace }}/Controller/ ${{ github.workspace }}/Locale/ ${{ github.workspace }}/Template/
