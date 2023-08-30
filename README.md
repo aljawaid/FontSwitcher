@@ -33,7 +33,7 @@
 
 Choose a new font style from a variety of self-hosted fonts replacing the default 'Helvetica Neue' (Mac), and 'Arial' (Windows) fonts to a different typeface giving your application a fresh new look.
 
-Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.
+Improve readability and reduce eye strain by choosing from [different styles](../master/all-fonts.md "View font styles") of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
@@ -55,6 +55,8 @@ Improve readability and reduce eye strain by choosing from different styles of s
 **Application Fonts**  
 
 ![Application Fonts](../master/screenshot-font-switcher.png)
+
+- View the available [font styles](../master/all-fonts.md)
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#installation--compatibility">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
