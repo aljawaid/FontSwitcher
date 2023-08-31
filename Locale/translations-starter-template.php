@@ -33,7 +33,6 @@ return array(
     'Application Fonts' => '',
     'By default, the application uses specific fonts with fallbacks depending on the operating system. Switch to one of the fonts below to change the text style across the application. All fonts listed here are open source webfonts. These fonts are included with this plugin but only used if selected. Select from one of the fonts below to override the default fonts.' => '',
     'Font Options' => '',
-    'font_switcher_font_name' => '',
     'Default Fonts' => '',
     'Font Typeface' => '',
     'Use default fonts' => '',
