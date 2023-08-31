@@ -66,6 +66,7 @@
                     <li class="font-charset-value" title="latin">Latin</li>
                     <li class="font-charset-value" title="latin-ext">Latin Extended</li>
                 </ul>
+                <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-lato.png" class="font-preview-img" title="<?= t('Font Style Preview') ?>" alt="<?= t('Font Preview') ?>">
             </div>
         </fieldset>
 
@@ -99,6 +100,7 @@
                     <li class="font-charset-value" title="latin">Latin</li>
                     <li class="font-charset-value" title="latin-ext">Latin Extended</li>
                 </ul>
+                <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-open-sans.png" class="font-preview-img" title="<?= t('Font Style Preview') ?>" alt="<?= t('Font Preview') ?>">
             </div>
         </fieldset>
 
@@ -129,6 +131,7 @@
                     <li class="font-charset-value" title="latin">Latin</li>
                     <li class="font-charset-value" title="latin-ext">Latin Extended</li>
                 </ul>
+                <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-roboto-slab.png" class="font-preview-img" title="<?= t('Font Style Preview') ?>" alt="<?= t('Font Preview') ?>">
             </div>
         </fieldset>
 
@@ -162,6 +165,7 @@
                     <li class="font-charset-value" title="latin">Latin</li>
                     <li class="font-charset-value" title="latin-ext">Latin Extended</li>
                 </ul>
+                <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-source-sans-3.png" class="font-preview-img" title="<?= t('Font Style Preview') ?>" alt="<?= t('Font Preview') ?>">
             </div>
         </fieldset>
 
@@ -193,6 +197,7 @@
                     <li class="font-charset-value" title="latin">Latin</li>
                     <li class="font-charset-value" title="latin-ext">Latin Extended</li>
                 </ul>
+                <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-ubuntu-mono.png" class="font-preview-img" title="<?= t('Font Style Preview') ?>" alt="<?= t('Font Preview') ?>">
             </div>
         </fieldset>
 
