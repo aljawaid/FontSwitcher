@@ -251,3 +251,16 @@ li.font-style-value {
     color: var(--pp-purple);
     background-color: var(--pp-white);
 }
+
+img.font-preview-img {
+    border: 2px solid transparent;
+    display: block;
+    transition: var(--transition-font-switcher);
+    margin-left: -3px;
+}
+
+.font-wrapper:hover img.font-preview-img {
+    border: 2px outset var(--pp-purple-dark);
+    border-radius: var(--border-radius-font-switcher);
+    margin-left: 0;
+}
