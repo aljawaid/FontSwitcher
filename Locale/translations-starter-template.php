@@ -39,6 +39,7 @@ return array(
     '(in order)' => '',
     'Styles' => '',
     'Character Sets' => '',
+    'Note: Fonts may still be overriden by other theme plugins.' => '',
     'Font Version Included' => '',
     'Use this font' => '',
     'Font Names with Fallbacks %s' => '',

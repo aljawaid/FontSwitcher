@@ -35,6 +35,7 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin">Latin</li>
                 </ul>
+                <p class="form-help default-notice"><?= t('Note: Fonts may still be overriden by other theme plugins.') ?></p>
             </div>
         </fieldset>
 

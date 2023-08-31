@@ -264,3 +264,8 @@ img.font-preview-img {
     border-radius: var(--border-radius-font-switcher);
     margin-left: 0;
 }
+
+#FontsPage p.form-help.default-notice {
+    display: block;
+    margin-left: 0;
+}
