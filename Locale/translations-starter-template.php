@@ -42,6 +42,8 @@ return array(
     'Font Version Included' => '',
     'Use this font' => '',
     'Font Names with Fallbacks %s' => '',
+    'Font Style Preview' => '',
+    'Font Preview' => '',
     'Save Font Settings' => '',
     'Back to Settings' => '',
 );
