@@ -33,6 +33,11 @@ class Plugin extends Base
         //  - Example: $this->route->addRoute('/my/custom/route', 'MyController', 'show', 'PluginNameExampleStudlyCaps');
         //  - Must have the corresponding action in the matching controller
         $this->route->addRoute('/settings/fonts', 'FontSwitcherController', 'showFonts', 'FontSwitcher');
+
+        // Helper
+        //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
+        //  - Add each Helper in the 'use' section at the top of this file
+        $this->helper->register('fontSwitcherHelper', '\Kanboard\Plugin\FontSwitcher\Helper\FontSwitcherHelper');
     }
 
     public function onStartup()
