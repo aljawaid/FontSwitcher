@@ -8,7 +8,7 @@ use Kanboard\Core\Base;
  * FontSwitcher Helper
  *
  * @package  Helper
- * @see 
+ * @see
  * @author   aljawaid
  */
 class FontSwitcherHelper extends Base
@@ -17,9 +17,9 @@ class FontSwitcherHelper extends Base
      * Get the User Font Preference
      *
      * @return void
-     * @author 
+     * @author
      */
-    function getFontPreference()
+    public function getFontPreference()
     {
         if ($this->configModel->get('font_switcher_font_name') == 'lato') {
             return 'Lato';
