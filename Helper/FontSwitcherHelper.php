@@ -21,6 +21,18 @@ class FontSwitcherHelper extends Base
      */
     function getFontPreference()
     {
-        return true;
+        if ($this->configModel->get('font_switcher_font_name') == 'lato') {
+            return 'Lato';
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'open-sans') {
+            return 'Open Sans';
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'roboto-slab') {
+            return 'Roboto Slab';
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'source-sans-3') {
+            return 'Source Sans 3';
+        } elseif ($this->configModel->get('font_switcher_font_name') == 'ubuntu-mono') {
+            return 'Ubuntu Mono';
+        } else {
+            return t('the default application fonts');
+        }
     }
 }
