@@ -28,7 +28,7 @@ return array(
     // Template/config/font-settings.php
     //
     'Font Switcher' => '',
-    'The site font can be changed in the %s page.' => '',
+    'Your font set is currently set to use %s. Change it in the %s page.' => '',
     'Font Settings' => '',
     'Visit page' => '',
     //
