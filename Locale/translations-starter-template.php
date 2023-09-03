@@ -21,6 +21,10 @@ return array(
     'Font settings saved successfully.' => '',
     'Unable to save font settings.' => '',
     //
+    // Helper/FontSwitcherHelper.php
+    //
+    'the default application fonts' => '',
+    //
     // Template/config/font-settings.php
     //
     'Font Switcher' => '',
