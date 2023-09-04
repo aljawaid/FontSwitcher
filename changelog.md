@@ -1,6 +1,13 @@
 # Changelog
 
 
+## v1.6
+
+_(most recent changes are listed on top):_
+- NEW: Show User Preference in Application Settings Page - or show if using the default fonts
+- FIX: Preview Picture for Roboto Slab - pic was not cropped properly
+
+
 ## v1.5
 
 _(most recent changes are listed on top):_
