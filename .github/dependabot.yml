@@ -12,7 +12,9 @@ updates:
       time: "09:00"
       # Use Greenwich Mean Time (UTC +01:00)
       timezone: "Europe/London"
-      assignees:
-        - "aljawaid"
-      reviewers:
-        - "aljawaid"
+    # Add assignees
+    assignees:
+      - "aljawaid"
+    # Add reviewers
+    reviewers:
+      - "aljawaid"
