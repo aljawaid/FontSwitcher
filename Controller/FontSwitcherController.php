@@ -40,7 +40,7 @@ class FontSwitcherController extends \Kanboard\Controller\PluginController
      */
     public function save()
     {
-        $values =  $this->request->getValues();
+        $values = $this->request->getValues();
         $redirect = $this->request->getStringParam('redirect', 'showFonts');
 
         if ($this->configModel->save($values)) {
