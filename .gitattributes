@@ -2,3 +2,10 @@
 *.ttf binary
 *.woff binary
 *.woff2 binary
+
+# Keep manifest-covered text assets byte-identical on every checkout.
+.gitattributes text eol=lf
+Assets/fonts/**/*.css text eol=lf
+Assets/fonts/**/*.txt text eol=lf
+Assets/fonts/SHA256SUMS text eol=lf
+Releases/SHA256SUMS text eol=lf

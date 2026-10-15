@@ -5,6 +5,7 @@
     --font-switcher-selected: #237A3B;
     --border-radius-font-switcher: 3px;
     --transition-font-switcher: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+
     color: inherit;
 }
 
@@ -56,7 +57,7 @@
 }
 
 #FontsPage .font-form.panel {
-    border: 1px solid currentColor;
+    border: 1px solid currentcolor;
     border-radius: var(--border-radius-font-switcher);
 }
 
@@ -79,7 +80,7 @@
 }
 
 #FontsPage .font-form fieldset.font-wrapper {
-    border: 1px solid currentColor;
+    border: 1px solid currentcolor;
     border-radius: var(--border-radius-font-switcher);
 }
 
@@ -167,7 +168,7 @@
     font-size: .9em;
     margin-right: 5px;
     color: inherit;
-    border: 1px solid currentColor;
+    border: 1px solid currentcolor;
     padding: 1px 3px;
     border-radius: var(--border-radius-font-switcher);
 }
@@ -178,7 +179,7 @@
 }
 
 #FontsPage .font-option-wrapper input[type="radio"]:focus-visible {
-    outline: 2px solid currentColor;
+    outline: 2px solid currentcolor;
     outline-offset: 3px;
 }
 
@@ -198,7 +199,7 @@
 }
 
 #FontsPage .font-wrapper:hover img.font-preview-img, #FontsPage .font-wrapper:focus-within img.font-preview-img {
-    border-color: currentColor;
+    border-color: currentcolor;
     border-radius: var(--border-radius-font-switcher);
 }
 
