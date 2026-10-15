@@ -13,7 +13,9 @@ use Kanboard\Core\Base;
 class FontSwitcherHelper extends Base
 {
     /**
-     * Get the User Font Preference
+     * Get the application-wide font preference label.
+     *
+     * Related test file: tests/Integration/FontSettingsTest.php.
      *
      * @see     font-settings.php
      * @return  string
@@ -21,18 +23,15 @@ class FontSwitcherHelper extends Base
      */
     public function getFontPreference()
     {
-        if ($this->configModel->get('font_switcher_font_name') == 'lato') {
-            return 'Lato';
-        } elseif ($this->configModel->get('font_switcher_font_name') == 'open-sans') {
-            return '&#39;Open Sans&#39;';
-        } elseif ($this->configModel->get('font_switcher_font_name') == 'roboto-slab') {
-            return '&#39;Roboto Slab&#39;';
-        } elseif ($this->configModel->get('font_switcher_font_name') == 'source-sans-3') {
-            return '&#39;Source Sans 3&#39;';
-        } elseif ($this->configModel->get('font_switcher_font_name') == 'ubuntu-mono') {
-            return '&#39;Ubuntu Mono&#39;';
-        } else {
-            return t('the default application fonts');
-        }
+        $labels = array(
+            'lato' => 'Lato',
+            'open-sans' => 'Open Sans',
+            'roboto-slab' => 'Roboto Slab',
+            'source-sans-3' => 'Source Sans 3',
+            'ubuntu-mono' => 'Ubuntu Mono',
+        );
+        $fontPreference = $this->fontPreferenceModel->getFontPreference();
+
+        return isset($labels[$fontPreference]) ? $labels[$fontPreference] : t('the default application fonts');
     }
 }

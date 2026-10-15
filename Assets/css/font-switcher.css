@@ -1,56 +1,16 @@
-/* KANBOARD PLUGIN - CSS FILE */
+/* FontSwitcher settings interface. All rules stay within the plugin's settings panels. */
 
-:root {
-    --pp-blue: #007AC9;
-    --pp-blue-alt: #00ADFF;
-    --pp-red: #B71234;
-    --pp-red-alt: #DA004C;
-    --pp-red-alt-2: #AE003D;
-    --pp-black: #000000;
-    --pp-light-grey: #8F8F8F;
-    --pp-grey-alt: #737373;
-    --pp-grey: #4D4D4D;
-    --pp-white: #FFFFFF;
-    --pp-green: #2EA02E;
-    --pp-green-dark: #055D20;
-    --pp-orange: #FF6500;
-    --pp-purple: #7532F9;
-    --pp-purple-dark: #3800A6;
-    --blue-icon-dark: #034CA6;
-    --button-blue-gradient: linear-gradient(to bottom, #7892C2 80%, #476E9E 100%);
-    --blue-border-gradient-match: #476E9E;
-    --button-background-delete: #D05C84;
-    --link-color-primary: #3366CC;
-    --header-page-margin-font-switcher: 5px 15px 10px 15px;
-    --page-margin-font-switcher: 0 15px 0 15px;
-    --title-margin-font-switcher: 0 15px 0 15px;
+#FontsPage, #FontSettingsSection {
+    --font-switcher-accent: #5936A2;
+    --font-switcher-selected: #237A3B;
     --border-radius-font-switcher: 3px;
-    --panel-background-font-switcher: #EEEEEE;
-    --transition-font-switcher: ease-in-out all .3s;
+    --transition-font-switcher: border-color .2s ease-in-out, box-shadow .2s ease-in-out;
+    color: inherit;
 }
 
-.pp-blue { color: var(--pp-blue); fill: var(--pp-blue); }
-.pp-blue-alt { color: var(--pp-blue-alt); fill: var(--pp-blue-alt); }
-.pp-red { color: var(--pp-red); fill: var(--pp-red); }
-.pp-red-alt { color: var(--pp-red-alt); fill: var(--pp-red-alt); }
-.pp-red-alt-2 { color: var(--pp-red-alt-2); fill: var(--pp-red-alt-2); }
-.pp-black { color: var(--pp-black); fill: var(--pp-black); }
-.pp-light-grey { color: var(--pp-light-grey); fill: var(--pp-light-grey); }
-.pp-grey { color: var(--pp-grey); fill: var(--pp-grey); }
-.pp-white { color: var(--pp-white); fill: var(--pp-white); }
-.pp-green { color: var(--pp-green); fill: var(--pp-green); }
-.pp-dark-green { color: var(--pp-green-dark); fill: var(--pp-green-dark); }
-.pp-orange { color: var(--pp-orange); fill: var(--pp-orange); }
-
-.display-none, .d-none { display: none; }
-
-.font-weight-bold { font-weight: bold; }
-
-.text-center { text-align: center; }
-
-.relative { position: relative; }
-
-.v-middle { vertical-align: middle; }
+#FontsPage .v-middle, #FontSettingsSection .v-middle {
+    vertical-align: middle;
+}
 
 #FontSettingsSection h3 {
     margin-top: 0;
@@ -67,14 +27,14 @@
     transition: var(--transition-font-switcher);
 }
 
-a.font-page-link {
+#FontSettingsSection a.font-page-link {
     text-decoration: none;
     font-weight: 600;
     transition: var(--transition-font-switcher);
 }
 
-a.font-page-link:hover, a.font-page-link:focus {
-    color: var(--pp-purple);
+#FontSettingsSection a.font-page-link:hover, #FontSettingsSection a.font-page-link:focus {
+    text-decoration: underline;
 }
 
 #FontsPage h2 {
@@ -86,186 +46,216 @@ a.font-page-link:hover, a.font-page-link:focus {
     margin-right: 5px;
 }
 
-.fonts-page-intro {
+#FontsPage .fonts-page-intro {
     margin-block: 25px;
 }
 
-.font-form h3 {
+#FontsPage .font-form h3 {
     margin-top: 0;
     font-weight: 600;
 }
 
-.font-form.panel {
-    border: 1px inset var(--pp-grey);
+#FontsPage .font-form.panel {
+    border: 1px solid currentColor;
     border-radius: var(--border-radius-font-switcher);
 }
 
-.font-form fieldset.font-wrapper legend, .font-form fieldset.font-wrapper-enabled legend {
-    background-color: var(--pp-white);
+#FontsPage .font-form fieldset.font-wrapper legend, #FontsPage .font-form fieldset.font-wrapper-enabled legend {
     padding-inline: 5px;
 }
 
-.font-form fieldset.font-wrapper-enabled {
-    border: 2px inset var(--pp-green);
+#FontsPage .font-form fieldset.font-wrapper-enabled {
+    border: 2px solid var(--font-switcher-selected);
 }
 
-.font-form fieldset {
+#FontsPage .font-form fieldset {
+    display: grid;
+    grid-template-columns: minmax(10rem, 14rem) minmax(0, 1fr) auto;
+    gap: .75rem 1rem;
     position: relative;
-    box-shadow: 0 0 2px 0;
+    margin-block: 1rem;
+    padding: 1rem;
+    transition: var(--transition-font-switcher);
 }
 
-.font-form fieldset.font-wrapper {
-    border: 2px inset var(--pp-purple);
+#FontsPage .font-form fieldset.font-wrapper {
+    border: 1px solid currentColor;
     border-radius: var(--border-radius-font-switcher);
 }
 
-.font-form fieldset.font-wrapper legend {
-    color: var(--pp-purple-dark);
+#FontsPage .font-form fieldset legend {
+    color: inherit;
+    font-weight: 600;
 }
 
-.icon-version {
-    position: absolute;
-    right: 10px;
-    top: -25px;
-    background: var(--pp-white);
-    padding-inline: 5px;
-    color: var(--pp-grey);
+#FontsPage .icon-version {
+    grid-column: 3;
+    grid-row: 1;
+    color: inherit;
+    text-align: center;
 }
 
-.font-form fieldset span[class*="-icon"] {
+#FontsPage .font-form fieldset span[class*="-icon"] {
     width: 30px;
     height: 30px;
-    background: var(--pp-white);
     padding-inline: 5px;
 }
 
-.font-form fieldset span.font-version {
+#FontsPage .font-form fieldset span.font-version {
     display: block;
-    background: var(--pp-white);
     padding-inline: 5px;
-    color: var(--pp-grey);
+    color: inherit;
     text-align: center;
     line-height: 1;
 }
 
-.font-form fieldset span.font-typeface {
-    position: absolute;
-    right: 10px;
-    bottom: 6px;
-    color: var(--pp-grey);
+#FontsPage .font-form fieldset span.font-typeface {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: end;
+    color: inherit;
 }
 
-.font-option-wrapper {
-    width: 200px;
+#FontsPage .font-option-wrapper {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    min-width: 0;
     font-size: .9em;
-    height: 40px;
-    display: inline-block;
-    vertical-align: middle;
+    align-self: center;
 }
 
-.font-option-wrapper label {
+#FontsPage .font-option-wrapper label {
     font-size: 1.1em;
     margin-top: 0;
 }
 
-.font-option-wrapper label input[type="radio"] {
+#FontsPage .font-option-wrapper label input[type="radio"] {
     width: 20px;
     height: 20px;
     vertical-align: bottom;
 }
 
-.font-description-wrapper {
-    display: inline-block;
-    vertical-align: middle;
+#FontsPage .font-description-wrapper {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    min-width: 0;
 }
 
-.font-description-name, .font-description-styles-title, .font-description-charsets-title {
+#FontsPage .font-description-name, #FontsPage .font-description-styles-title, #FontsPage .font-description-charsets-title {
     font-size: .8em;
     font-weight: 600;
-    color: var(--pp-purple-dark);
-    opacity: .7;
+    color: inherit;
     margin-right: 15px;
 }
 
-.font-description-name i {
+#FontsPage .font-description-name i {
     font-weight: normal;
 }
 
-ul.font-description li, ul.font-description-styles li, ul.font-description-charsets li {
+#FontsPage ul.font-description li, #FontsPage ul.font-description-styles li, #FontsPage ul.font-description-charsets li {
     list-style-type: none;
     margin-left: 0;
     line-height: initial;
     display: inline-block;
 }
 
-ul.font-description, ul.font-description-styles, ul.font-description-charsets {
+#FontsPage ul.font-description, #FontsPage ul.font-description-styles, #FontsPage ul.font-description-charsets {
     margin-block: 2px 5px;
 }
 
-li.font-style-value {
-    background-color: var(--pp-light-grey);
-    color: var(--pp-white);
-}
-
-.font-style-value, .font-charset-value {
+#FontsPage .font-style-value, #FontsPage .font-charset-value {
     font-size: .9em;
     margin-right: 5px;
-    color: var(--pp-grey-alt);
-    border: 1px solid var(--pp-grey-alt);
+    color: inherit;
+    border: 1px solid currentColor;
     padding: 1px 3px;
     border-radius: var(--border-radius-font-switcher);
 }
 
 /* Radio element, when checked */
-.font-option-wrapper input[type="radio"]:checked {
-    box-shadow: 0 0 0 2px var(--pp-purple);
+#FontsPage .font-option-wrapper input[type="radio"]:checked {
+    box-shadow: 0 0 0 2px var(--font-switcher-accent);
 }
 
-.font-name-value {
+#FontsPage .font-option-wrapper input[type="radio"]:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}
+
+#FontsPage .font-name-value {
     padding: 2px 7px 2px 5px;
     border-radius: var(--border-radius-font-switcher);
-    color: var(--pp-black);
+    color: inherit;
 }
 
-#FontForm .form-actions button.save-font-settings {
-    background-color: #9B69FF;
-    color: white;
-    font-size: 1.1em;
-    border: 2px solid var(--pp-purple-dark);
-    border-radius: var(--border-radius-font-switcher);
-    vertical-align: middle;
-}
-
-#FontForm .form-actions button.save-font-settings:hover, #FontForm .form-actions button.save-font-settings:focus {
-    background-color: var(--pp-purple);
-}
-
-#FontForm .form-actions a.btn {
-    font-size: 1.1em;
-    border: 2px solid var(--pp-purple);
-    border-radius: var(--border-radius-font-switcher);
-    vertical-align: middle;
-}
-
-#FontForm .form-actions a.btn:hover, #FontForm .form-actions a.btn:focus {
-    color: var(--pp-purple);
-    background-color: var(--pp-white);
-}
-
-img.font-preview-img {
+#FontsPage img.font-preview-img {
     border: 2px solid transparent;
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: var(--transition-font-switcher);
-    margin-left: -3px;
+    margin-top: .5rem;
 }
 
-.font-wrapper:hover img.font-preview-img {
-    border: 2px outset var(--pp-purple-dark);
+#FontsPage .font-wrapper:hover img.font-preview-img, #FontsPage .font-wrapper:focus-within img.font-preview-img {
+    border-color: currentColor;
     border-radius: var(--border-radius-font-switcher);
-    margin-left: 0;
 }
 
 #FontsPage p.form-help.default-notice {
     display: block;
     margin-left: 0;
+}
+
+#FontsPage .font-global-help {
+    margin-block: .75rem 1.25rem;
+}
+
+#FontsPage .form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+@media (max-width: 700px) {
+    #FontsPage .font-form fieldset {
+        grid-template-columns: minmax(0, 1fr) auto;
+    }
+
+    #FontsPage .font-option-wrapper {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    #FontsPage .icon-version {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #FontsPage .font-description-wrapper {
+        grid-column: 1 / -1;
+        grid-row: 2;
+    }
+
+    #FontsPage .font-form fieldset span.font-typeface {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        justify-self: start;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #FontsPage *, #FontSettingsSection * {
+        transition: none !important;
+    }
+}
+
+@media (forced-colors: active) {
+    #FontsPage .font-form fieldset.font-wrapper-enabled {
+        border-color: Highlight;
+    }
+
+    #FontsPage .font-option-wrapper input[type="radio"]:checked {
+        box-shadow: 0 0 0 2px Highlight;
+    }
 }

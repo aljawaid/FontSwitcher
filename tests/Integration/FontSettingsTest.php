@@ -61,6 +61,7 @@ assertTrue($container['fontPreferenceModel']->saveFontPreference(array(
     'font_switcher_test_guard' => 'changed',
 )), 'A supported preference could not be saved.');
 assertSame('source-sans-3', $container['fontPreferenceModel']->getFontPreference(), 'The supported preference was not loaded.');
+assertSame('Source Sans 3', $container['helper']->fontSwitcherHelper->getFontPreference(), 'The presentation helper returned the wrong font label.');
 assertSame('unchanged', $container['configModel']->getOption('font_switcher_test_guard'), 'An unrelated submitted setting was changed.');
 
 assertFalse($container['fontPreferenceModel']->saveFontPreference(array(

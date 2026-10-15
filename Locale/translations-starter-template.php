@@ -13,7 +13,7 @@ return array(
     //
     // GENERAL
     //
-    'Choose a new font style from a variety of open source fonts replacing the default \'Helvetica Neue\' (Mac) and \'Arial\' (Windows) fonts to a different typeface giving your application a fresh new look. Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.Controller/FontSwitcherController.php' => '',
+    'Choose a new font style from a variety of open source fonts replacing the default \'Helvetica Neue\' (Mac) and \'Arial\' (Windows) fonts to a different typeface giving your application a fresh new look. Improve readability and reduce eye strain by choosing from different styles of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.' => '',
     //
     // Controller/FontSwitcherController.php
     //
@@ -35,7 +35,9 @@ return array(
     // Template/config/fonts.php
     //
     'Application Fonts' => '',
-    'By default, the application uses specific fonts with fallbacks depending on the operating system. Switch to one of the fonts below to change the text style across the application. All fonts listed here are open source webfonts. These fonts are included with this plugin but only used if selected. Select from one of the fonts below to override the default fonts.' => '',
+    'Choose an application-wide font or retain the operating system defaults. The included open source font files are served locally by Kanboard, and only the selected family is loaded.' => '',
+    'The selected font applies to every user after these settings are saved.' => '',
+    'Font files stay on this Kanboard server and are not fetched from a third party. Another theme plugin may override the selected font.' => '',
     'Font Options' => '',
     'Default Fonts' => '',
     'Font Typeface' => '',
@@ -43,12 +45,23 @@ return array(
     '(in order)' => '',
     'Styles' => '',
     'Character Sets' => '',
-    'Note: Fonts may still be overriden by other theme plugins.' => '',
+    'Fonts may still be overridden by another theme plugin.' => '',
     'Font Version Included' => '',
     'Use this font' => '',
     'Font Names with Fallbacks %s' => '',
-    'Font Style Preview' => '',
-    'Font Preview' => '',
+    'Regular (400 normal)' => '',
+    'Italic' => '',
+    'Bolder (600)' => '',
+    'Bolder Italic (600 italic)' => '',
+    'Bold (700)' => '',
+    'Bold Italic (700 italic)' => '',
+    'Latin' => '',
+    'Latin Extended' => '',
+    'Preview of the Lato font' => '',
+    'Preview of the Open Sans font' => '',
+    'Preview of the Roboto Slab font' => '',
+    'Preview of the Source Sans 3 font' => '',
+    'Preview of the Ubuntu Mono font' => '',
     'Save Font Settings' => '',
     'Back to Settings' => '',
 );
