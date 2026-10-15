@@ -49,7 +49,7 @@
             <legend>Lato</legend>
             <div class="icon-version">
                 <span class="woff-icon" aria-hidden="true"></span>
-                <span class="font-version" title="<?= t('Font Version Included') ?>">v24</span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">2.015</span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
@@ -71,6 +71,8 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin"><?= t('Latin') ?></li>
                     <li class="font-charset-value" title="latin-ext"><?= t('Latin Extended') ?></li>
+                    <li class="font-charset-value" title="cyrillic"><?= t('Cyrillic (Кириллица)') ?></li>
+                    <li class="font-charset-value" title="cyrillic-ext"><?= t('Cyrillic Extended') ?></li>
                 </ul>
                 <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-lato.png" class="font-preview-img" width="465" height="90" alt="<?= t('Preview of the Lato font') ?>">
             </div>
@@ -81,7 +83,7 @@
             <legend>Open Sans</legend>
             <div class="icon-version">
                 <span class="woff-icon" aria-hidden="true"></span>
-                <span class="font-version" title="<?= t('Font Version Included') ?>">v35</span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">3.003</span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
@@ -105,6 +107,8 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin"><?= t('Latin') ?></li>
                     <li class="font-charset-value" title="latin-ext"><?= t('Latin Extended') ?></li>
+                    <li class="font-charset-value" title="cyrillic"><?= t('Cyrillic (Кириллица)') ?></li>
+                    <li class="font-charset-value" title="cyrillic-ext"><?= t('Cyrillic Extended') ?></li>
                 </ul>
                 <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-open-sans.png" class="font-preview-img" width="495" height="140" alt="<?= t('Preview of the Open Sans font') ?>">
             </div>
@@ -115,7 +119,7 @@
             <legend>Roboto Slab</legend>
             <div class="icon-version">
                 <span class="woff-icon" aria-hidden="true"></span>
-                <span class="font-version" title="<?= t('Font Version Included') ?>">v25</span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">2.002</span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">serif</span>
             <div class="font-option-wrapper">
@@ -136,6 +140,8 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin"><?= t('Latin') ?></li>
                     <li class="font-charset-value" title="latin-ext"><?= t('Latin Extended') ?></li>
+                    <li class="font-charset-value" title="cyrillic"><?= t('Cyrillic (Кириллица)') ?></li>
+                    <li class="font-charset-value" title="cyrillic-ext"><?= t('Cyrillic Extended') ?></li>
                 </ul>
                 <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-roboto-slab.png" class="font-preview-img" width="469" height="117" alt="<?= t('Preview of the Roboto Slab font') ?>">
             </div>
@@ -146,7 +152,7 @@
             <legend>Source Sans 3</legend>
             <div class="icon-version">
                 <span class="woff-icon" aria-hidden="true"></span>
-                <span class="font-version" title="<?= t('Font Version Included') ?>">v9</span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">3.052</span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
@@ -170,6 +176,8 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin"><?= t('Latin') ?></li>
                     <li class="font-charset-value" title="latin-ext"><?= t('Latin Extended') ?></li>
+                    <li class="font-charset-value" title="cyrillic"><?= t('Cyrillic (Кириллица)') ?></li>
+                    <li class="font-charset-value" title="cyrillic-ext"><?= t('Cyrillic Extended') ?></li>
                 </ul>
                 <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-source-sans-3.png" class="font-preview-img" width="439" height="137" alt="<?= t('Preview of the Source Sans 3 font') ?>">
             </div>
@@ -180,7 +188,7 @@
             <legend>Ubuntu Mono</legend>
             <div class="icon-version">
                 <span class="woff-icon" aria-hidden="true"></span>
-                <span class="font-version" title="<?= t('Font Version Included') ?>">v17</span>
+                <span class="font-version" title="<?= t('Font Version Included') ?>">0.80</span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">monospace</span>
             <div class="font-option-wrapper">
@@ -202,6 +210,8 @@
                     <li class="font-description-charsets-title"><?= t('Character Sets') ?></li>
                     <li class="font-charset-value" title="latin"><?= t('Latin') ?></li>
                     <li class="font-charset-value" title="latin-ext"><?= t('Latin Extended') ?></li>
+                    <li class="font-charset-value" title="cyrillic"><?= t('Cyrillic (Кириллица)') ?></li>
+                    <li class="font-charset-value" title="cyrillic-ext"><?= t('Cyrillic Extended') ?></li>
                 </ul>
                 <img src="<?= $this->url->dir() ?>plugins/FontSwitcher/Assets/previews/font-preview-ubuntu-mono.png" class="font-preview-img" width="472" height="95" alt="<?= t('Preview of the Ubuntu Mono font') ?>">
             </div>

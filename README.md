@@ -31,9 +31,9 @@
     </a>
 </p>
 
-Choose a new font style from a variety of self-hosted fonts replacing the default 'Helvetica Neue' (Mac), and 'Arial' (Windows) fonts to a different typeface giving your application a fresh new look.
+Choose an application-wide typeface from a collection of fonts bundled with the plugin, or retain Kanboard's operating-system defaults. The selection applies to every user and can be changed by an application administrator.
 
-Improve readability and reduce eye strain by choosing from [different styles](../master/all-fonts.md "View font styles") of sans-serif fonts or select an article-type serif type or even a code-type monospace style. Font styles are applied instantly across the site for all users.
+The collection includes [sans-serif, serif and monospace styles](../master/all-fonts.md "View font styles") with Latin, Latin Extended, Cyrillic and Cyrillic Extended character sets.
 
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#screenshots">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
@@ -44,9 +44,12 @@ Improve readability and reduce eye strain by choosing from [different styles](..
   - Collection includes Serif, Sans-Serif and Monospace typefaces
 - Webfont (`WOFF2`) versions are used for faster rendering
   - Webfonts are not installed locally on the user's machine
-  - Fonts are included with the plugin - no third party connections are required
+  - Fonts are served by the Kanboard installation; no third-party runtime connection is required
   - Compatible with modern browsers (Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+)
-- Fonts are only loaded if selected to be used
+- Only the selected family is enabled
+- Cyrillic files use `unicode-range`, so browsers fetch them only when page content needs those characters
+- Font sources, licences and asset hashes are documented in [Assets/fonts/FONT_SOURCES.md](../master/Assets/fonts/FONT_SOURCES.md)
+- Release archive hashes are published in [Releases/SHA256SUMS](../master/Releases/SHA256SUMS)
 
 <p align="right">[<a href="#user-content-readme-bottom">&#8595; Bottom</a>] [<a href="#features">&#8592; Previous</a>] [<a href="#usage">&#8594; Next</a>] [<a href="#user-content-readme-top">&#8593; Top</a>]</p>
 
@@ -79,13 +82,15 @@ Go to `Settings` &#10562; Application Settings
 <details>
     <summary><strong>Compatibility</strong></summary>
 
-- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.20`
+- Requires [Kanboard](https://github.com/kanboard/kanboard "Kanboard - Kanban Project Management Software") ≥`1.2.54`
+- Tested with PHP `8.2`, `8.3`, `8.4` and `8.5`
 - **Other Plugins & Action Plugins**
-  - _No known issues_
-  - Compatible with [KanboardCSS](https://github.com/aljawaid/KanboardCSS), [EssentialTheme](https://codeberg.org/abu/EssentialTheme)
+  - Styles are scoped to the FontSwitcher settings panels
+  - Theme plugins may intentionally override the selected application font
+  - Earlier releases were tested with [KanboardCSS](https://github.com/aljawaid/KanboardCSS) and [EssentialTheme](https://codeberg.org/abu/EssentialTheme); current versions still require browser acceptance before release
 - **Core Files & Templates**
   - _No template overrides_
-  - _No database changes_
+  - _No database schema changes; one value is stored in Kanboard's existing settings table_
 
 </details>
 <details>
@@ -107,8 +112,13 @@ Go to `Settings` &#10562; Application Settings
 ## License
 
 - This project is distributed under the [MIT License](../master/LICENSE "Read The MIT license")
-- Fonts are copyright of their respective authors
-  - See [Google Fonts Open Source Font Attribution](https://fonts.google.com/attribution) to find out the specific license for fonts in this package
+- Bundled fonts remain copyright of their respective authors and retain their own licences:
+  - [Lato — SIL Open Font License 1.1](../master/Assets/fonts/lato/OFL.txt)
+  - [Open Sans — SIL Open Font License 1.1](../master/Assets/fonts/open-sans/OFL.txt)
+  - [Roboto Slab — Apache License 2.0](../master/Assets/fonts/roboto-slab/LICENSE.txt)
+  - [Source Sans 3 — SIL Open Font License 1.1](../master/Assets/fonts/source-sans-3/OFL.txt)
+  - [Ubuntu Mono — Ubuntu Font Licence 1.0](../master/Assets/fonts/ubuntu-mono/UFL.txt)
+- See the [font provenance and verification record](../master/Assets/fonts/FONT_SOURCES.md) for versions, pinned sources and checksums
 
 ---
 

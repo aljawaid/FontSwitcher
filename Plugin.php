@@ -16,14 +16,19 @@ class Plugin extends Base
         $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/css/font-switcher-icons.css'));
         if ($this->configModel->get('font_switcher_font_name') == 'lato') {
             $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/lato/lato.css'));
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/lato/cyrillic.css'));
         } elseif ($this->configModel->get('font_switcher_font_name') == 'open-sans') {
             $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/open-sans/open-sans.css'));
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/open-sans/cyrillic.css'));
         } elseif ($this->configModel->get('font_switcher_font_name') == 'roboto-slab') {
             $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/roboto-slab/roboto-slab.css'));
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/roboto-slab/cyrillic.css'));
         } elseif ($this->configModel->get('font_switcher_font_name') == 'source-sans-3') {
             $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/source-sans-3/source-sans-3.css'));
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/source-sans-3/cyrillic.css'));
         } elseif ($this->configModel->get('font_switcher_font_name') == 'ubuntu-mono') {
             $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/ubuntu-mono/ubuntu-mono.css'));
+            $this->hook->on('template:layout:css', array('template' => 'plugins/FontSwitcher/Assets/fonts/ubuntu-mono/cyrillic.css'));
         }
 
         // Views - Template Hook
@@ -76,13 +81,13 @@ class Plugin extends Base
 
     public function getPluginVersion()
     {
-        return '1.6.0';
+        return '1.7.0';
     }
 
     public function getCompatibleVersion()
     {
         // Examples: '>=1.0.37' '<1.0.37' '<=1.0.37'
-        return '>=1.2.20';
+        return '>=1.2.54';
     }
 
     public function getPluginHomepage()

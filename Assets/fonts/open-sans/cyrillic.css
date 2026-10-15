@@ -1,0 +1,55 @@
+/* Open Sans 3.003 - Cyrillic and Cyrillic Extended */
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url('open-sans-cyrillic_cyrillic-ext-regular.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url('open-sans-cyrillic_cyrillic-ext-italic.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url('open-sans-cyrillic_cyrillic-ext-600.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 600;
+    src: url('open-sans-cyrillic_cyrillic-ext-600italic.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url('open-sans-cyrillic_cyrillic-ext-700.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 700;
+    src: url('open-sans-cyrillic_cyrillic-ext-700italic.woff2') format('woff2');
+    unicode-range: U+0301, U+0400-052F, U+1C80-1C8A, U+20B4, U+2116, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}

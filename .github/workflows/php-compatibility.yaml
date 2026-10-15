@@ -90,3 +90,7 @@ jobs:
       - name: Test font settings integration
         working-directory: kanboard
         run: php plugins/FontSwitcher/tests/Integration/FontSettingsTest.php
+
+      - name: Test bundled font assets
+        working-directory: kanboard
+        run: php plugins/FontSwitcher/tests/Integration/FontAssetsTest.php

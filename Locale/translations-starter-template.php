@@ -57,6 +57,8 @@ return array(
     'Bold Italic (700 italic)' => '',
     'Latin' => '',
     'Latin Extended' => '',
+    'Cyrillic (Кириллица)' => '',
+    'Cyrillic Extended' => '',
     'Preview of the Lato font' => '',
     'Preview of the Open Sans font' => '',
     'Preview of the Roboto Slab font' => '',
