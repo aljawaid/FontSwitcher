@@ -10,14 +10,14 @@
         <?= $this->form->csrf() ?>
 
         <!-- Default Fonts -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'default_fonts') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'default_fonts') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class=""><?= t('Default Fonts') ?></legend>
             <div class="icon-version">
                 <span class="default-files-icon"></span>
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use default fonts'), 'default_fonts', true, isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'default_fonts') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use default fonts'), 'default_fonts', $fontPreference == 'default_fonts') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -40,7 +40,7 @@
         </fieldset>
 
         <!-- Lato Font -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'lato') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'lato') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Lato</legend>
             <div class="icon-version">
                 <span class="woff-icon"></span>
@@ -48,7 +48,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'lato', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'lato') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'lato', $fontPreference == 'lato') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -72,7 +72,7 @@
         </fieldset>
 
         <!-- Open Sans Font -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'open-sans') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'open-sans') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Open Sans</legend>
             <div class="icon-version">
                 <span class="woff-icon"></span>
@@ -80,7 +80,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'open-sans', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'open-sans') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'open-sans', $fontPreference == 'open-sans') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -106,7 +106,7 @@
         </fieldset>
 
         <!-- Roboto Slab Font -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'roboto-slab') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'roboto-slab') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Roboto Slab</legend>
             <div class="icon-version">
                 <span class="woff-icon"></span>
@@ -114,7 +114,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'roboto-slab', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'roboto-slab') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'roboto-slab', $fontPreference == 'roboto-slab') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -137,7 +137,7 @@
         </fieldset>
 
         <!-- Source Sans 3 -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'source-sans-3') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'source-sans-3') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Source Sans 3</legend>
             <div class="icon-version">
                 <span class="woff-icon"></span>
@@ -145,7 +145,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">sans-serif</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'source-sans-3', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'source-sans-3') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'source-sans-3', $fontPreference == 'source-sans-3') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">
@@ -171,7 +171,7 @@
         </fieldset>
 
         <!-- Ubuntu Mono -->
-        <fieldset class="<?= ($this->task->configModel->get('font_switcher_font_name') == 'ubuntu-mono') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
+        <fieldset class="<?= ($fontPreference == 'ubuntu-mono') ? 'font-wrapper-enabled' : 'font-wrapper'?>">
             <legend class="">Ubuntu Mono</legend>
             <div class="icon-version">
                 <span class="woff-icon"></span>
@@ -179,7 +179,7 @@
             </div>
             <span class="font-typeface" title="<?= t('Font Typeface') ?>">monospace</span>
             <div class="font-option-wrapper">
-                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'ubuntu-mono', isset($values['font_switcher_font_name']) && $values['font_switcher_font_name'] == 'ubuntu-mono') ?>
+                <?= $this->form->radio('font_switcher_font_name', t('Use this font'), 'ubuntu-mono', $fontPreference == 'ubuntu-mono') ?>
             </div>
             <div class="font-description-wrapper">
                 <ul class="font-description">

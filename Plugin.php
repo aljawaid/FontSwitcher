@@ -3,6 +3,7 @@
 namespace Kanboard\Plugin\FontSwitcher;
 
 use Kanboard\Core\Plugin\Base;
+use Kanboard\Core\Security\Role;
 use Kanboard\Core\Translator;
 
 class Plugin extends Base
@@ -34,10 +35,22 @@ class Plugin extends Base
         //  - Must have the corresponding action in the matching controller
         $this->route->addRoute('/settings/fonts', 'FontSwitcherController', 'showFonts', 'FontSwitcher');
 
+        // Font settings affect every user; access rules are covered by tests/Integration/FontSettingsTest.php.
+        $this->applicationAccessMap->add('FontSwitcherController', '*', Role::APP_ADMIN);
+
         // Helper
         //  - Example: $this->helper->register('helperClassNameCamelCase', '\Kanboard\Plugin\PluginNameExampleStudlyCaps\Helper\HelperNameExampleStudlyCaps');
         //  - Add each Helper in the 'use' section at the top of this file
         $this->helper->register('fontSwitcherHelper', '\Kanboard\Plugin\FontSwitcher\Helper\FontSwitcherHelper');
+    }
+
+    public function getClasses()
+    {
+        return array(
+            'Plugin\FontSwitcher\Model' => array(
+                'FontPreferenceModel',
+            ),
+        );
     }
 
     public function onStartup()
