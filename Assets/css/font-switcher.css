@@ -195,17 +195,13 @@
     background-color: #fff;
     border: 2px solid transparent;
     display: block;
+    filter: invert(1);
     max-width: 100%;
     height: auto;
     transition: var(--transition-font-switcher);
     margin-top: .5rem;
-}
-
-/* The bundled raster previews use black text on white, so invert both together in Dark theme. */
-@media (prefers-color-scheme: dark) {
-    #FontsPage img.font-preview-img {
-        filter: invert(1);
-    }
+    /* Difference blending makes the inverted preview follow Kanboard's explicit Light or Dark background. */
+    mix-blend-mode: difference;
 }
 
 #FontsPage .font-wrapper:hover img.font-preview-img, #FontsPage .font-wrapper:focus-within img.font-preview-img {

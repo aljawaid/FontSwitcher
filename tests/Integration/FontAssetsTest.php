@@ -34,9 +34,8 @@ foreach ($manifestLines as $line) {
 
 assertSame(61, count($manifestEntries), 'The font manifest does not contain every expected asset.');
 assertTrue(
-    strpos($interfaceCss, '@media (prefers-color-scheme: dark)') !== false
-    && preg_match('/#FontsPage img\.font-preview-img\s*\{[^}]*filter:\s*invert\(1\)/s', $interfaceCss) === 1,
-    'The raster font previews are not adapted for the Dark theme.'
+    preg_match('/#FontsPage img\.font-preview-img\s*\{[^}]*filter:\s*invert\(1\)[^}]*mix-blend-mode:\s*difference/s', $interfaceCss) === 1,
+    'The raster font previews do not adapt to Kanboard Light and Dark backgrounds.'
 );
 
 $fontFiles = array();
