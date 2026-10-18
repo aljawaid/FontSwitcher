@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.7.1
+
+- FIX: Package the release candidate with the required `FontSwitcher/` root entry so Kanboard can update it safely.
+- FIX: Publish and verify the 1.7.1 release-candidate checksum.
+
 
 ## v1.7.0
 
