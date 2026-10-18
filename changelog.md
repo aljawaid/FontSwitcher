@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.7.2
+
+- FIX: BUG: Adapt the bundled raster font previews to the Dark theme so they no longer render as bright white panels.
+- FIX: Add integration coverage for the Dark-theme preview treatment.
+
+
 ## v1.7.1
 
 - FIX: Package the release candidate with the required `FontSwitcher/` root entry so Kanboard can update it safely.

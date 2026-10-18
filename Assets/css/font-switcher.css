@@ -1,4 +1,6 @@
-/* FontSwitcher settings interface. All rules stay within the plugin's settings panels. */
+/* FontSwitcher settings interface. All rules stay within the plugin's settings panels.
+ * Related test: tests/Integration/FontAssetsTest.php.
+ */
 
 #FontsPage, #FontSettingsSection {
     --font-switcher-accent: #5936A2;
@@ -190,12 +192,20 @@
 }
 
 #FontsPage img.font-preview-img {
+    background-color: #fff;
     border: 2px solid transparent;
     display: block;
     max-width: 100%;
     height: auto;
     transition: var(--transition-font-switcher);
     margin-top: .5rem;
+}
+
+/* The bundled raster previews use black text on white, so invert both together in Dark theme. */
+@media (prefers-color-scheme: dark) {
+    #FontsPage img.font-preview-img {
+        filter: invert(1);
+    }
 }
 
 #FontsPage .font-wrapper:hover img.font-preview-img, #FontsPage .font-wrapper:focus-within img.font-preview-img {

@@ -3,8 +3,8 @@
 /**
  * FontSwitcher bundled font asset integration test.
  *
- * Related files: Assets/fonts/FONT_SOURCES.md, Assets/fonts/SHA256SUMS,
- * the family CSS and WOFF2 assets, and the family licence files.
+ * Related files: Assets/css/font-switcher.css, Assets/fonts/FONT_SOURCES.md,
+ * Assets/fonts/SHA256SUMS, the family CSS and WOFF2 assets, and the family licence files.
  */
 
 declare(strict_types=1);
@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 $pluginRoot = dirname(__DIR__, 2);
 $fontRoot = $pluginRoot . '/Assets/fonts';
+$interfaceCss = file_get_contents($pluginRoot . '/Assets/css/font-switcher.css');
 $manifestPath = $fontRoot . '/SHA256SUMS';
 $manifestLines = file($manifestPath, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 $manifestEntries = array();
@@ -32,6 +33,11 @@ foreach ($manifestLines as $line) {
 }
 
 assertSame(61, count($manifestEntries), 'The font manifest does not contain every expected asset.');
+assertTrue(
+    strpos($interfaceCss, '@media (prefers-color-scheme: dark)') !== false
+    && preg_match('/#FontsPage img\.font-preview-img\s*\{[^}]*filter:\s*invert\(1\)/s', $interfaceCss) === 1,
+    'The raster font previews are not adapted for the Dark theme.'
+);
 
 $fontFiles = array();
 $cssFiles = array();
