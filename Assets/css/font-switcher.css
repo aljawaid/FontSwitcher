@@ -192,7 +192,7 @@
 }
 
 #FontsPage img.font-preview-img {
-    background-color: #fff;
+    background-color: #ffffff;
     border: 2px solid transparent;
     display: block;
     filter: invert(1);
@@ -200,6 +200,7 @@
     height: auto;
     transition: var(--transition-font-switcher);
     margin-top: .5rem;
+
     /* Difference blending makes the inverted preview follow Kanboard's explicit Light or Dark background. */
     mix-blend-mode: difference;
 }
