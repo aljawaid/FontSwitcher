@@ -2,8 +2,8 @@
 
 ## v1.7.3
 
-- FIX: BUG: Follow Kanboard's explicit Light or Dark theme when adapting raster font previews, independently of the operating-system colour preference.
-- FIX: Keep preview text legible while blending its fixed white background into the active Kanboard theme.
+_(most recent changes are listed on top):_
+- FIX: BUG: Follow Explicit Kanboard Themes In Font Previews
 
 
 ## v1.7.2
