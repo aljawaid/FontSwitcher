@@ -1,7 +1,21 @@
-*.eot binary
-*.ttf binary
+# Normalise text files to LF while preserving known binary formats.
+* text=auto eol=lf
+
+*.svg  text eol=lf
+
+*.zip  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
 *.woff binary
 *.woff2 binary
+*.ttf  binary
+*.otf  binary
+*.eot  binary
+*.pdf  binary
 
 # Keep manifest-covered text assets byte-identical on every checkout.
 .gitattributes text eol=lf
